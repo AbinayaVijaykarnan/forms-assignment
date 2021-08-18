@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Marksheet</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main{
+            background-color: darkcyan;
+            width:60%;
+            margin:2% 10%;
+        }
+        #submit{
+           background-color: green;
+           font-weight:bold;
+           padding:15px 30px;
+           border-radius:20px;
+           margin:0 40%;
+       }
+       .box{
+           margin:10px 0;
+       }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <fieldset class="main">
+            <h1 align="center"> Student Marksheet Form:</h1>
+            <table border="0" width="100%">
+
+                <tr>
+                    <th>School Name:</th>
+                    <td ><input type="text" name="schoolname"  required class="box"> </td>
+                </tr>
+                <tr>
+                    <th>Student Name:</th>
+                    <td ><input type="text" name="studentname"  required class="box"> </td>
+                </tr>
+                <tr>
+                    <th>Father Name:</th>
+                    <td ><input type="text" name="fathername"  required class="box"> </td>
+                </tr>
+                <tr>
+                    <th>Date of birth: </th>
+                    <td><input type="date" name="dob"  required class="box"> </td>
+                </tr>
+                <tr>
+                    <th>Gender: </th>
+                    <td>  <input type="radio" name="gender" required checked> Female 
+                         <input type="radio" name="gender" required >Male 
+                         <input type="radio" name="gender" required >Others
+                    </td>
+                </tr>
+                <tr>
+                    <th>Hindi marks: </th>
+                    <td><input type="number" name="hindi" placeholder="Enter Hindi mark" required class="box"> </td>
+                </tr>
+                <tr>
+                    <th>English marks: </th>
+                    <td><input type="number" name="english" placeholder="Enter English mark" required class="box"> </td>
+                </tr>
+                <tr>
+                    <th>Maths marks: </th>
+                    <td><input type="number" name="maths" placeholder="Enter Maths mark" required class="box"> </td>
+                </tr>
+                <tr>
+                    <th>Physics marks: </th>
+                    <td><input type="number" name="physics" placeholder="Enter Physics mark" required class="box"> </td>
+                </tr>
+                <tr>
+                    <th>Chemistry marks: </th>
+                    <td><input type="number" name="chemistry" placeholder="Enter Chemistry mark" required class="box"> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" value="SUBMIT" id="submit">
+                    </td>
+                    <td>
+                        <input type="reset" name="reset" value="RESET" id="submit">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

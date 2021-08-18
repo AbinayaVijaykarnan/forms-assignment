@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Payment</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+        body{
+            background-color: rgb(220, 20, 20);
+        }
+        
+     h2{
+            color:rgb(128, 0, 85);
+        }
+        .material-icons{
+            font-size: 30px;
+        }
+        .box{
+            width:85%;
+        }
+        .main{
+            width:300px;
+            margin: auto;
+            background-color: white;
+        }
+        button{
+            width:100%;
+            background-color: rgba(4, 0, 255, 0.699);
+            color:white;
+            padding:10px;
+            font-size:20px;
+        }
+    </style>
+  
+</head>
+<body>
+    <h1>Payment form:</h1>
+    <form method="POST">
+        <fieldset class="main">
+             <h2>Payment Details:</h2> <br> 
+
+             CARD NUMBER <br>
+            <input type="number" name="cardnumber" placeholder="Card Number" maxlength="16" required class="box" > <i class="material-icons">credit_card</i>  <br><br>
+        
+             <table> 
+
+                 <tr>
+                     <td>
+                    EXPIRATION DATE  <br> 
+                    <input type="month" name="month" placehlder="MM/YY" required > 
+                     </td>
+
+                     <td>
+                    CVC CODE <br>
+                    <input type="number" name="cvcnumber" placeholder="CVC" maxlength="3" required >  
+                     </td>
+                 </tr>
+            
+              </table>
+    
+        <br>
+
+            COUPON CODE <br>
+             <input type="number" name="couponnumber" placeholder="Coupon Code" required class="box">
+       
+       <br> <br>
+
+           <button type="submit" name="submit" value="Confirm Payment" >
+
+             Confirm Payment
+             </button>  
+    
+  
+    </fieldset>
+    
+    </form>
+
+
+</body>
+</html>

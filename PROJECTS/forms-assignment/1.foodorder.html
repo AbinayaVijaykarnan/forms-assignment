@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Food Order</title>
+    <style>
+        body{
+            background-image: url('/images/pizza1.jpg');
+            background-size: cover;
+        }
+        .main{
+            width:50%;
+            margin:5% 5%;
+            background-color:tomato;
+        }
+        .left{
+            text-align: left;
+        }
+        .table1{
+            margin:0 auto;
+            background-color: gold;
+        }
+        .table2{
+            width:50%;
+            margin:0 auto;
+        }
+        .box{
+            width:80%;
+            padding:10px;
+        }
+        .table3{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <fieldset class="main">
+            <h1 align="center">Food-Order Form</h1>
+            <hr>
+
+            <table border="0" width="50%" class="table1">
+                <tr>
+                    <th colspan="2">Price List</th>
+                </tr>
+                <tr>
+                   <th>Food Item</th>
+                   <th>Price (Rs.) </th>
+                </tr>
+                <tr>
+                   <td>Chicken Pizza</td>
+                   <td>500</td>
+                </tr>
+                <tr>
+                    <td>Veg. Pizza</td>
+                    <td>250</td>
+                 </tr>
+                 <tr>
+                    <td>Cheese Pizza</td>
+                    <td>300</td>
+                 </tr>
+                 <tr>
+                    <td>Chicken Nuggets</td>
+                    <td>180</td>
+                 </tr>
+                 <tr>
+                    <td>French Fries</td>
+                    <td>75</td>
+                 </tr>
+            </table>
+            
+            <br> <br> 
+            <hr>
+
+            <fieldset class="table2">
+
+                Branch:  
+                <select name="branch" class="box">
+                    <option> Nearby location</option>
+                    <option> Old bus stand</option>
+                    <option> New bus stand</option>
+                    <option> Railway station</option>
+                    <option> Medical college road</option>
+                    <option> Others</option>
+                </select> 
+                <br> <br>
+
+                Username: 
+                <input type="text" name="username" placeholder="Enter your name"required class="box">
+
+                <br> <br>
+
+                Mobile: 
+                <input type="number" name="phone" placeholder="Eg: +123456789" required class="box">
+
+            </fieldset>
+           
+            <br> <br>
+
+            <fieldset class="table3">
+                <table border="0" width="100%">
+                    <tr>
+                        <th>Food Item</th>
+                        <th>Quantity</th>
+                        <th>Price </th>
+                    </tr>
+
+                    <tr>
+                        <td>Item 1:  
+                            <select name="Item 1" class="box" required>
+                                <option> Chicken Pizza</option>
+                                <option>Veg. Pizza</option>
+                                <option> Cheese Pizza</option>
+                                <option>Chicken Nuggets </option>
+                                <option>French Fries </option>
+                                
+                         </td>
+
+                         <td>
+                            <input type="number" name="Quantity1" required class="box">
+                         </td>
+
+                         <td>
+                            <input type="number" name="Price1" required class="box">
+                         </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Item 2:  
+                            <select name="Item 1" class="box" required class="box">
+                                <option> Chicken Pizza</option>
+                                <option>Veg. Pizza</option>
+                                <option> Cheese Pizza</option>
+                                <option>Chicken Nuggets </option>
+                                <option>French Fries </option>
+                                
+                         </td>
+
+                         <td>
+                            <input type="number" name="Quantity2" required class="box">
+                         </td>
+
+                         <td>
+                            <input type="number" name="Price2" required class="box">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>Item 3:  
+                            <select name="Item 1" class="box" required class="box">
+                                <option> Chicken Pizza</option>
+                                <option>Veg. Pizza</option>
+                                <option> Cheese Pizza</option>
+                                <option>Chicken Nuggets </option>
+                                <option>French Fries </option>
+                                
+                         </td>
+
+                         <td>
+                            <input type="number" name="Quantity3" required class="box">
+                         </td>
+
+                         <td>
+                            <input type="number" name="Price3" required class="box">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>Item 4:  
+                            <select name="Item 1" class="box" required>
+                                <option> Chicken Pizza</option>
+                                <option>Veg. Pizza</option>
+                                <option> Cheese Pizza</option>
+                                <option>Chicken Nuggets </option>
+                                <option>French Fries </option>
+                                
+                         </td>
+
+                         <td>
+                            <input type="number" name="Quantity4" required class="box">
+                         </td>
+
+                         <td>
+                            <input type="number" name="Price4" required class="box">
+                         </td>
+                    </tr>
+            </fieldset>
+
+        </fieldset>
+
+
+    </form>
+</body>
+</html>

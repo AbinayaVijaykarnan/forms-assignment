@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Flight booking</title>
+    <style>
+        body{
+            background-image: url('/images/flight.jpg');
+            background-size: cover;
+        }
+        .main{
+            background-color: brown;
+            width:50%;
+            margin:10% 45%;
+           
+        }
+        .table1{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .heading{
+            width:50%;
+        }
+        .box{
+            width:80%;
+            padding:5px;
+        }
+        #submit{
+           background-color:blue;
+           font-size: 20px;
+           font-weight:bold;
+           padding:15px 30px;
+           border-radius:20px;
+           margin:0 40%;
+       }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <fieldset class="main">
+
+            <h1 align="center"> BOOK A FLIGHT</h1>
+
+            <hr>
+            <table border="0" width="100%" class="table1">
+                <tr>
+                    
+                    <td colspan="2"> Trip: <br>
+                         <input type="radio" name="trip" required checked> Round Trip
+                         <input type="radio" name="trip" required >One-way Trip
+                         <input type="radio" name="trip" required >Multi-cities
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="heading"> From: <br>
+                        <input type="text" name="from" placeholder="From location" required class="box"></td>
+                    <td> To: <br>
+                        <input type="text" name="to" placeholder="To location" required class="box"></td>
+                </tr>
+                  
+                <tr>
+                    <td class="heading">Departure Date: <br>
+                        <input type="date" name="depdate"  required class="box"> </td>
+                
+                    <td>Return Date: <br>
+                        <input type="date" name="returndate"  required class="box"> </td>
+                </tr>
+                <tr>
+                    <td>No. of Adults<br>
+                        <input type="number" name="number"  required class="box"> </td>
+                </tr>
+                <tr>
+                    <td> Payment Methods: <br>
+                     <input type="checkbox" name="payment" required  checked> Debit card
+                         <input type="checkbox" name="payment" required >Credit card
+        
+                    </td>
+                </tr>
+            
+
+            </table>
+            <input type="submit" name="submit" value="Confirm Booking" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
