@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+    <style>
+        .photo{
+            background-color: white;
+            width:10%;
+            margin:0 auto;
+            padding:80px 0;
+        }
+        .main{
+            background-color: white;
+            width:50%;
+            margin:0 auto;
+            padding:20px;
+            font-size:25px;
+            line-height: 1.8;
+        }
+        .colour{
+           background-color:lightgreen;
+           color: red;
+           padding:5px;
+        }
+        .box{
+            width:100%;
+        }
+        #submit{
+            padding:5px 55px;
+            margin:0 40%;
+            background-color:rgba(0, 17, 250, 0.548);
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body bgcolor="purple">
+
+    <h1 align="center">Self Declaration form:</h1>
+     <br>
+
+    <form method="POST" enctype="multipart/form-data">
+
+             <fieldset class="photo">
+                 <p>UPLOAD IMAGE:</p>
+                 <input type="file" name="photo" accept="image/*"  required>
+
+             </fieldset>
+        
+             <br> <br>
+              <fieldset class="main">
+
+                  <p>I  <input type="text" name="username" placeholder="Enter your name"required class="colour"> Son/Daughter of <input type="text" name="fathername" placeholder="Enter your Fathers name" required class="colour"> aged <input type="age" name="age" placeholder="Enter your age" required class="colour"> , nationality <select name="nationality" class="colour"> <option>Select Nationality</option> 
+                  <option>Indian</option>
+                  <option>American</option>
+                  <option>Malaysian</option>
+                  <option>Others</option>
+                </select>, hereby declare that the information provided above is true and correct to the best of my knowledge. I fully understand the consequences of giving false information. If the information is found to be false, I shall be liable for punishment under Indian penal code / any other law applicable thereto.
+
+                  </p>
+
+                  <table border="0" width="100%">
+
+                     <tr>
+                        <th width="40%" align="left">Place: </th>
+                        <td> <input type="text" name="place" placeholder="Enter Place" required class="box"> </td>
+                     </tr>
+    
+                     <tr>
+                        <th width="40%" align="left">Date:</th>
+                        <td> <input type="date" name="date" required class="box"></td>
+                     </tr>
+
+                     <tr>
+                        <th width="40%" align="left">Upload Applicants Signature:</th>
+                        <td> <input type="file" name="signimage" required class="box" ></td>
+                     </tr>
+                     
+                 </table>
+                 
+                 <br>
+                 <input type="submit" name="submit" id="submit">
+
+             </fieldset>
+
+    </form>
+</body>
+</html>
